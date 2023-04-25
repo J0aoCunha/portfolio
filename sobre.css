@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    scroll-behavior: smooth;
+    font-family: 'poppins', 'sans-serif';
+}
+
+
+
+/*barra de navegaçao*/
+.header1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 4%;
+    background-color: #754ef9;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.58em;
+    color: white;
+    font-weight: 600;
+    cursor: default;
+    margin-right: auto;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 1.7rem;
+    color: white;
+    font-weight: 200;
+    margin-right: 2.5rem;
+}
+
+.navbar a.active::before {
+    content: '';
+    position: absolute;
+    left: 140px;
+    bottom: -6px;
+    width: 100%;
+    height: .2rem;
+    background: white;
+}
+
+/*sobre mim*/
+header#container {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(fotojoao2.png);
+    background-repeat: no-repeat;
+    background-position: 1000px;
+    background-size: 33%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 112px;
+    position: relative;
+}
+
+/*Sobre Mim*/
+h1 {
+    font-size: 55px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+    color: #754ef9;
+}
+
+p {
+    width: 50%;
+    font-size: 18px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+    display: inline-block;
+    text-align: start;
+    text-transform: uppercase;
+}
+
+/*footer*/
+.feito-por {
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #754ef9;
+}
+
+.feito-por h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}

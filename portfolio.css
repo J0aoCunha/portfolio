@@ -6,8 +6,11 @@
     font-family: 'poppins', 'sans-serif';
 }
 
+
+
 /*barra de navegaçao*/
 .header1 {
+
     position: relative;
     top: 0;
     left: 0;
@@ -23,7 +26,7 @@
     color: white;
     font-weight: 600;
     cursor: default;
-    margin-right: 65%;
+    margin-right: 70%;
 }
 
 .navbar a {
@@ -51,69 +54,81 @@
 
 /*header*/
 
-header#container {
-    height: 100vh;
-    width: 100vw;
-    background-image: url(fotojoao2.png);
-    background-repeat: no-repeat;
-    background-position: 970px;
-    background-size: 40%;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    box-sizing: border-box;
-    padding: 0 112px;
-    position: relative;
-}
-
-/* titulo*/
-h1 {
-    font-size: 55px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    margin-bottom: 10px;
-    color: #754ef9;
-}
-
-h2 {
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    margin-bottom: 10px;
-}
-
-h3 {
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    margin-bottom: 10px;
-}
-
-/* minha redes sociais */
-
-.redes-social {
-    margin: 1rem;
-    display: flex;
-}
-
-.redes-social a {
-    text-decoration: none;
-    color: #000000;
-    padding: 1rem 4rem;
-    border: 1px solid black;
-    min-width: 3rem;
+header {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: .5s ease-in-out;
+    padding-top: 20px;
+}
+
+header h1 {
+    color: #754ef9;
+}
+
+/*projetos*/
+
+section#projetos {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+
+
+.linha {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 25px;
+}
+
+.imagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 2%;
 
 }
 
-a:hover {
-    background-color: #8766f5ce;
+.imagem a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 2%;
+}
+
+.imagem img {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 0px 7px #754ef9;
+    filter: grayscale(0.6);
+    transition: 0.5s ease-in-out;
+}
+
+.imagem img:hover {
+    filter: unset;
 }
 
 
+.imagem h3 {
+    font-style: 'poppins';
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10px;
+    width: 73%;
+    height: 40px;
+
+    background-color: #754ef9;
+}
 
 /*footer*/
 .feito-por {
@@ -123,6 +138,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     background-color: #754ef9;
+
 }
 
 .feito-por h4 {
